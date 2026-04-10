@@ -1,15 +1,70 @@
-# Binaries
+# Go binaries and build artifacts
 *.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
 *.out
+*.cover
+coverage.out
+coverage.html
+bin/
+dist/
 
-# Database
+# Project-specific generated binaries
+/api
+/api.exe
+/cmd/api/api
+/cmd/api/api.exe
+
+# Local databases and runtime data
 *.db
+*.db-journal
+*.sqlite
+*.sqlite3
+/files.db
+/cmd/api/files.db
 
-# Node modules
-web/node_modules/
+# Uploads and generated local content
+/uploads/
+/cmd/api/uploads/
 
-# Build output
-web/dist/
+# Node / Angular
+/web/node_modules/
+/web/dist/
+/web/.angular/
+/web/coverage/
+/web/tmp/
+/web/out-tsc/
+/web/.sass-cache/
+/web/.history/
 
-# Environment files
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+testem.log
+
+# Environment and local overrides
 .env
+.env.*
+!.env.example
+!.env.sample
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Postman local/generated artifacts
+.postman/
+
+# Keep committed Postman definitions under /postman versioned
